@@ -1,19 +1,9 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
+.container{
+  background: no-repeat;
+  background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1578675122841&di=57eb811b11a645a93003e180c5c48851&imgtype=0&src=http%3A%2F%2Fwallpapers1.hellowallpaper.com%2Fart_black-background-widescreen--03_24-1280x800.jpg");
+  
 }
 
 .usermotto {
@@ -23,8 +13,9 @@
 .title{
   margin: 22px 0 0 16px;
   text-align: left;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
+  color: #fff;
 }
 
 .title2{
@@ -37,7 +28,8 @@
 .hotpic{
   margin: 16px 16px 0 16px;
   padding: 0px 12px;
-  background-color: #000;
+  background-color: #fff;
   border-radius:12px;
-  height: 100px;
+  height: 200px;
+  
 }
