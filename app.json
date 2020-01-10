@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat", 
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+
+"tabBar": {
+
+  "backgroundColor": "#ffffff",
+  "color": "#999999",
+  "selectedColor": "#000000",
+  "borderStyle": "black",
+
+  "list": [
+    {
+    "pagePath":"pages/index/index",
+    "text": "直播",
+    "iconPath":"img/live.png",
+    "selectedIconPath": "img/living.png"
+    },
+
+    {
+      "pagePath": "pages/index/index",
+      "text": "订单",
+      "iconPath": "img/order.png",
+      "selectedIconPath": "img/ordering.png"
+    },
+
+    {
+      "pagePath": "pages/index/index",
+      "text": "个人中心",
+      "iconPath": "img/center.png",
+      "selectedIconPath": "img/centering.png"
+    }
+    
+  ]
+},
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <text class="title">早上好</text>
+  <text class="title2">9月20日  周末</text>
+  <view class="hotpic">
+     <view class="title">
+        <view class="avatar"></view>
+        <view class="spinfor"></view>
+     </view>
+     <view class="hot_img"></view>
+     <text class="hot_detail">早上好</text>
+  </view>
+
+
+
+
+
+
+
+
+</view>
+
+
+
