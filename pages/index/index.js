@@ -4,10 +4,17 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    array: [{ id: 1, picM: "/img/zyjd.png", tcid: "专业鉴宝" }, { id: 2, picM: "/img/ytpfj.png", tcid: "源头批发价" }, { id: 3, picM: "/img/7tbt.png", tcid: "七天包退" }, { id: 4, picM: "/img/rsps.png", tcid: "如实拍摄" }
+    ],
+
+    living: [
+            { id: 1, livpic: " ", livname: "主播一", livtitle: "翡翠一点半", livperson: "2.5万" , livadd:"昆明"}, 
+            { id: 2, livpic: " ", livname: "主播二", livtitle: "于是宝石", livperson: "3.0万", livadd: "昆明"},
+            { id: 3, livpic: " ", livname: "主播三", livtitle: "快点来看直播啊", livperson: "4.2万", livadd: "昆明"}, 
+    
+    ],
+    imagewidth:0,
+    imageheight:0,
   },
   //事件处理函数
   bindViewTap: function() {
@@ -50,5 +57,43 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+
+
+  // imageLoad: function (e) {
+  //   var imageSize = this.imageUtil(e)
+  //   this.setData({
+  //     imagewidth: imageSize.imageWidth,
+  //     imageheight: imageSize.imageHeight
+  //   })
+  // },
+  // imageUtil: function (e) {
+  //   var imageSize = {};
+  //   var originalWidth = e.detail.width; 
+  //   var originalHeight = e.detail.height; 
+  //   var originalScale = originalHeight / originalWidth; 
+    
+  //   wx.getSystemInfo({
+  //     success: function (res) {
+  //       var windowWidth = res.windowWidth;
+  //       var windowHeight = res.windowHeight;
+  //       var windowscale = windowHeight / windowWidth;
+  //       if (originalScale < windowscale) { 
+          
+  //         imageSize.imageWidth = windowWidth;
+  //         imageSize.imageHeight = (windowWidth * originalHeight) / originalWidth;
+  //       } else { 
+          
+  //         imageSize.imageHeight = windowHeight;
+  //         imageSize.imageWidth = (windowHeight * originalWidth) / originalHeight;
+  //       }
+  //     }
+  //   })
+  //   return imageSize;
+  // }
+
+
+
+
+
 })

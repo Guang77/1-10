@@ -1,19 +1,60 @@
 <!--index.wxml-->
+
+
 <view class="container">
+  <image class="main"></image>
   <text class="title">早上好</text>
   <text class="title2">9月20日  周末</text>
   <view class="hotpic">
-     <view class="title">
-        <view class="avatar"></view>
-        <view class="spinfor"></view>
+     <view class="toptitle">
+        <view class="avatar">
+           <image class="img_zb" style="width: {{imagewidth}}px; height: {{imageheight}}px;" bindload="imageLoad"  mode="center" src='http://m.imeitou.com/uploads/allimg/2019032114/ccnwi0frzll.jpg' ></image>
+          <view style="margin-left:10px;">破碎酒瓶</view>
+        </view>
+        <view class="spinfor">2.8万  观看 | 昆明</view>
      </view>
      <view class="hot_img"></view>
-     <text class="hot_detail">早上好这里是</text>
+     <view class="hot_detail">最帅主播来直播啦,翡翠珠宝免费送啦送啦送啦</view>
   </view>
 
+  <view class="qualification">
 
+     <view wx:for="{{array}}" class="qualification1">
+        <view class="qualif-icon"><image class="q_icon" src="{{item.picM}}"></image></view>
+        <view class="qualif-text">{{item.tcid}}</view>
+     </view>
+     
+  </view>
+ 
+ 
+ <view class="recommend">
+    <view class="recommend_title">
+        <text style="font-size:14px;font-weight:bold;">推荐</text>
+        <text style="font-size:11px; color:#aaa;" decode="true" space="true"> &nbsp;&nbsp;5场直播</text>
+    </view>
+   <scroll-view  scroll-x  > 
+   <view class="livorder">
+     <view wx:for="{{living}}" class="recommand_living" >
+      <view class="living_pic">
+         <view style="font-size:14px;">{{item.livname}}</view>
+         <view class="living_gif"></view>
+         
+      </view>
 
+      <view class="living_info">
+        <view style="font-size:14px;">{{item.livtitle}}</view>
+        <view style="color:#aaa; margin-top:8rpx;">{{item.livperson}} | {{item.livadd}}</view>
+      
+      </view>
 
+     </view>
+    </view> 
+   </scroll-view>
+  </view> 
+
+  
+
+ 
 
 
 

@@ -1,14 +1,28 @@
 /**index.wxss**/
 
-.container{
-  background: no-repeat;
-  background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1578675122841&di=57eb811b11a645a93003e180c5c48851&imgtype=0&src=http%3A%2F%2Fwallpapers1.hellowallpaper.com%2Fart_black-background-widescreen--03_24-1280x800.jpg");
-  
+page{
+  background-color: #f0f0f0;
 }
 
-.usermotto {
-  margin-top: 200px;
+.main{
+
+  background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1578675122841&di=57eb811b11a645a93003e180c5c48851&imgtype=0&src=http%3A%2F%2Fwallpapers1.hellowallpaper.com%2Fart_black-background-widescreen--03_24-1280x800.jpg"); 
+  
+  width: 100vw;
+ 
+ background-repeat:no-repeat;
+
+background-size:100% 100%;
+
+-moz-background-size:100% 100%; 
+
+ z-index: -1;
+
+position: absolute;
+
 }
+
+
 
 .title{
   margin: 22px 0 0 16px;
@@ -16,6 +30,7 @@
   font-size: 15px;
   font-weight: bold;
   color: #fff;
+
 }
 
 .title2{
@@ -25,11 +40,146 @@
   color: #999;
 }
 
+
 .hotpic{
   margin: 16px 16px 0 16px;
-  padding: 0px 12px;
   background-color: #fff;
-  border-radius:12px;
-  height: 200px;
+  border-radius:8px;
+  z-index: 100;
+}
+
+.toptitle{
+  padding: 12px;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.img_zb{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+
+}
+
+.spinfor{
   
+  font-size: 12px;
+  color: #999;
+
+}
+
+.hot_img{
+  background-image: url("http://www.cdzbz.cn/uploads/allimg/170918/1-1F91Q4255YT.jpg");
+  height: 180px;
+   background-repeat:no-repeat;
+
+background-size:100% 100%;
+
+-moz-background-size:100% 100%; 
+
+  }
+
+.hot_detail{
+  margin: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  overflow:hidden; 
+    text-overflow:ellipsis;
+    white-space:nowrap; 
+  
+}
+
+.qualification{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 12px 0 12px;
+  font-size: 12px;
+
+}
+
+.qualification1{
+  margin: 0 10rpx;
+  width: 100vh;
+  height: 160rpx;
+  background-color: #fff;
+  border-radius:8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.qualif-icon{
+  width:56rpx;
+  height:56rpx;
+
+}
+
+.qualif-text{
+  margin-top: 8px;
+}
+
+.q_icon{
+  width: 56rpx;
+  height: 56rpx;
+}
+
+.recommend{
+  background-color: #fff;
+  padding: 32rpx 0;
+  margin-top:32rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+}
+.recommend_title{
+  margin-left: 32rpx;
+}
+
+.livorder{
+ display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.recommand_living{
+  margin-left: 32rpx;
+}
+
+.living_pic{
+  margin-top: 30rpx;
+  padding: 16rpx 0 16rpx 24rpx;
+  border-radius:8px;
+  width: 338rpx;
+  height: 190rpx;
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.living_info{
+  margin: 16rpx 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
 }
