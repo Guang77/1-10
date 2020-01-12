@@ -13,8 +13,19 @@ Page({
             { id: 3, livpic: " ", livname: "主播三", livtitle: "快点来看直播啊", livperson: "4.2万", livadd: "昆明"}, 
     
     ],
-    imagewidth:0,
-    imageheight:0,
+
+    slider:[
+      {id:1,slidershow:"/img/slider1.jpg",sliderlink:""},
+      {id:2,slidershow: "/img/slider2.jpg", sliderlink: "" },
+      {id:3,slidershow: "/img/slider3.jpg", sliderlink: "" },
+    ],
+ 
+
+    listlive:[
+      { id: 1, listavatar: "", listname: "主播一", listperson: "2.5万", listaddr: "北京", listdet: "这是于是宝石的直播间", livbgpic:"/img/recommand_pic1.png"}, 
+      { id: 2, listavatar: "", listname: "主播二", listperson: "2.5万", listaddr: "昆明", listdet: "这是翡翠直播间", livbgpic:"/img/recommand_pic2.png"}
+    ],
+
   },
   //事件处理函数
   bindViewTap: function() {
@@ -59,6 +70,7 @@ Page({
     })
   },
 
+  
 
   // imageLoad: function (e) {
   //   var imageSize = this.imageUtil(e)

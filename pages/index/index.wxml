@@ -8,7 +8,7 @@
   <view class="hotpic">
      <view class="toptitle">
         <view class="avatar">
-           <image class="img_zb" style="width: {{imagewidth}}px; height: {{imageheight}}px;" bindload="imageLoad"  mode="center" src='http://m.imeitou.com/uploads/allimg/2019032114/ccnwi0frzll.jpg' ></image>
+           <image class="img_zb" mode="widthFix" style="width: {{imagewidth}}px; height: {{imageheight}}px;"   mode="center" src='http://m.imeitou.com/uploads/allimg/2019032114/ccnwi0frzll.jpg' ></image>
           <view style="margin-left:10px;">破碎酒瓶</view>
         </view>
         <view class="spinfor">2.8万  观看 | 昆明</view>
@@ -18,7 +18,7 @@
   </view>
 
   <view class="qualification">
-
+  
      <view wx:for="{{array}}" class="qualification1">
         <view class="qualif-icon"><image class="q_icon" src="{{item.picM}}"></image></view>
         <view class="qualif-text">{{item.tcid}}</view>
@@ -27,23 +27,23 @@
   </view>
  
  
- <view class="recommend">
+  <view class="recommend">
     <view class="recommend_title">
         <text style="font-size:14px;font-weight:bold;">推荐</text>
-        <text style="font-size:11px; color:#aaa;" decode="true" space="true"> &nbsp;&nbsp;5场直播</text>
+        <text style="font-size:12px; color:#aaa;" decode="true" space="true"> &nbsp;&nbsp;5场直播</text>
     </view>
-   <scroll-view  scroll-x  > 
+  <scroll-view  scroll-x  > 
    <view class="livorder">
      <view wx:for="{{living}}" class="recommand_living" >
       <view class="living_pic">
-         <view style="font-size:14px;">{{item.livname}}</view>
+         <view>{{item.livname}}</view>
          <view class="living_gif"></view>
          
       </view>
 
       <view class="living_info">
         <view style="font-size:14px;">{{item.livtitle}}</view>
-        <view style="color:#aaa; margin-top:8rpx;">{{item.livperson}} | {{item.livadd}}</view>
+        <view style="color:#aaa; font-size:12px; margin-top:8rpx;">{{item.livperson}} | {{item.livadd}}</view>
       
       </view>
 
@@ -52,7 +52,46 @@
    </scroll-view>
   </view> 
 
-  
+ <swiper class="sliderss" autoplay="{{true}}" interval="3000" duration="1000" circular="false">
+    <view wx:for="{{slider}}">
+       <swiper-item>
+          <view ><image src="{{item.slidershow}}" mode="widthFix"></image></view>
+       </swiper-item>
+    </view>
+   </swiper>
+
+<view class="listTitle">
+     <text style="font-size:14px;font-weight:bold;">直播列表</text>
+      <text style="font-size:12px; color:#aaa;" decode="true" space="true"> &nbsp;&nbsp;5场直播</text>
+</view>
+
+<view class="listAll">
+    <view wx:for="{{listlive}}" class="listlive" style="background-image:url('{{item.livbgpic}}')">
+        <view class="listAvatar">
+          <image class="avatar_pic"></image>
+          <view style="padding-left:20rpx; color:#fff;">{{item.listname}}</view>
+        </view>
+        <view class="listStaus">
+           
+              <view class="list_up">
+                <image class="statuscom"></image>
+                <view style="margin:0 40rpx 0 24rpx; font-size:10px;">
+                    <text style="color:#fdb33f" decode="true" space="true">{{item.listperson}}观看&nbsp;&nbsp;</text>
+                    <text style="color:#fff" decode="true" space="true">|&nbsp;&nbsp;{{item.listaddr}}</text>
+                </view>   
+              </view>
+              
+              <view class="listdown_tile" style="font-size:14px; color:#fff; font-weight:bold;">
+                 {{item.listdet}}
+              </view>
+             
+        </view>
+    </view>
+</view>
+
+
+
+
 
  
 
