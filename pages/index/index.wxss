@@ -82,12 +82,8 @@ position: absolute;
 
 .hot_img{
   background-image: url("http://www.cdzbz.cn/uploads/allimg/170918/1-1F91Q4255YT.jpg");
-  height: 180px;
-   background-repeat:no-repeat;
-
-background-size:100% 100%;
-
--moz-background-size:100% 100%; 
+  height: 388rpx;
+   background-repeat:no-repeat;background-size:100% 100%;-moz-background-size:100% 100%; 
 
   }
 
@@ -173,6 +169,7 @@ background-size:100% 100%;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  
 }
 
 .living_info{
@@ -186,7 +183,12 @@ background-size:100% 100%;
 
 .sliderss{
   width: 100%;
-  height: 180px;
+  height: 421rpx;
+}
+
+.sliderss,image{
+  width: 100%;
+  height: 421rpx;
 }
 
 /* .listAll{
@@ -202,13 +204,14 @@ background-size:100% 100%;
 
 .listlive{
   margin:24rpx 32rpx 0 32rpx;
-  height: 162px;
-  border-radius: 16rpx;
+  height: 386rpx;
+  border-radius: 24rpx;
   background-color:blue;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start; 
+  background-repeat:no-repeat;background-size:100% 100%;-moz-background-size:100% 100%; 
   
 }
 

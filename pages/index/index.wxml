@@ -36,7 +36,7 @@
    <view class="livorder">
      <view wx:for="{{living}}" class="recommand_living" >
       <view class="living_pic">
-         <view>{{item.livname}}</view>
+         <view style="font-size:12px;">{{item.livname}}</view>
          <view class="living_gif"></view>
          
       </view>
@@ -55,7 +55,7 @@
  <swiper class="sliderss" autoplay="{{true}}" interval="3000" duration="1000" circular="false">
     <view wx:for="{{slider}}">
        <swiper-item>
-          <view ><image src="{{item.slidershow}}" mode="widthFix"></image></view>
+          <view><image src="{{item.slidershow}}" ></image></view>
        </swiper-item>
     </view>
    </swiper>
@@ -66,7 +66,7 @@
 </view>
 
 <view class="listAll">
-    <view wx:for="{{listlive}}" class="listlive" style="background-image:url('{{item.livbgpic}}')">
+    <view wx:for="{{listLive}}" class="listlive" style="background-image:url('{{item.livbgpic}}')">
         <view class="listAvatar">
           <image class="avatar_pic"></image>
           <view style="padding-left:20rpx; color:#fff;">{{item.listname}}</view>
