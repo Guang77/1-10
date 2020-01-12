@@ -8,9 +8,9 @@ Page({
     ],
 
     living: [
-            { id: 1, livpic: " ", livname: "主播一", livtitle: "翡翠一点半", livperson: "2.5万" , livadd:"昆明"}, 
-            { id: 2, livpic: " ", livname: "主播二", livtitle: "于是宝石", livperson: "3.0万", livadd: "昆明"},
-            { id: 3, livpic: " ", livname: "主播三", livtitle: "快点来看直播啊", livperson: "4.2万", livadd: "昆明"}, 
+      { id: 1, livpic: "/img/recommand_pic1.png", livname: "主播一", livtitle: "翡翠一点半", livperson: "2.5万" , livadd:"昆明"}, 
+      { id: 2, livpic: " /img/recommand_pic2.png", livname: "主播二", livtitle: "于是宝石", livperson: "3.0万", livadd: "昆明"},
+      { id: 3, livpic: " /img/recommand_pic1.png", livname: "主播三", livtitle: "快点来看直播啊", livperson: "4.2万", livadd: "昆明"}, 
     
     ],
 
@@ -23,7 +23,7 @@ Page({
 
     listLive:[
       { id: 1, listavatar: "", listname: "主播一", listperson: "2.5万", listaddr: "北京", listdet: "这是于是宝石的直播间", livbgpic:"/img/recommand_pic1.png"}, 
-      { id: 2, listavatar: "", listname: "主播二", listperson: "2.5万", listaddr: "昆明", listdet: "这是翡翠直播间", livbgpic:"/img/recommand_pic2.png"}
+      { id: 2, listavatar: "", listname: "主播二", listperson: "2.5万", listaddr: "昆明", listdet: "这是翡翠直播间这是翡翠直播间这是翡翠直播间", livbgpic:"/img/recommand_pic2.png"}
     ],
 
   },
@@ -72,37 +72,7 @@ Page({
 
   
 
-  // imageLoad: function (e) {
-  //   var imageSize = this.imageUtil(e)
-  //   this.setData({
-  //     imagewidth: imageSize.imageWidth,
-  //     imageheight: imageSize.imageHeight
-  //   })
-  // },
-  // imageUtil: function (e) {
-  //   var imageSize = {};
-  //   var originalWidth = e.detail.width; 
-  //   var originalHeight = e.detail.height; 
-  //   var originalScale = originalHeight / originalWidth; 
-    
-  //   wx.getSystemInfo({
-  //     success: function (res) {
-  //       var windowWidth = res.windowWidth;
-  //       var windowHeight = res.windowHeight;
-  //       var windowscale = windowHeight / windowWidth;
-  //       if (originalScale < windowscale) { 
-          
-  //         imageSize.imageWidth = windowWidth;
-  //         imageSize.imageHeight = (windowWidth * originalHeight) / originalWidth;
-  //       } else { 
-          
-  //         imageSize.imageHeight = windowHeight;
-  //         imageSize.imageWidth = (windowHeight * originalWidth) / originalHeight;
-  //       }
-  //     }
-  //   })
-  //   return imageSize;
-  // }
+  
 
 
 

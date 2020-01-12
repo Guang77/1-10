@@ -63,7 +63,6 @@ position: absolute;
   justify-content: flex-start;
   align-items: center;
   font-size: 14px;
-  font-weight: bold;
 }
 
 .img_zb{
@@ -85,7 +84,18 @@ position: absolute;
   height: 388rpx;
    background-repeat:no-repeat;background-size:100% 100%;-moz-background-size:100% 100%; 
 
+   position: relative;
+
   }
+
+.dianzan{
+  position: absolute;
+  width: 100rpx;
+  height: 100rpx; 
+  right: 32rpx;
+  bottom: 24rpx;
+
+}
 
 .hot_detail{
   margin: 24rpx;
@@ -165,6 +175,7 @@ position: absolute;
   width: 338rpx;
   height: 190rpx;
   background-color: #ddd;
+  background-repeat:no-repeat;background-size:100% 100%;-moz-background-size:100% 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -178,8 +189,13 @@ position: absolute;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-
 }
+
+.living_gif{
+  width: 170rpx;
+  height: 46rpx;
+}
+
 
 .sliderss{
   width: 100%;
@@ -200,6 +216,7 @@ position: absolute;
 
 .listTitle{
   margin:32rpx 0 0 32rpx;
+  
 }
 
 .listlive{
@@ -212,6 +229,7 @@ position: absolute;
   justify-content: space-between;
   align-items: flex-start; 
   background-repeat:no-repeat;background-size:100% 100%;-moz-background-size:100% 100%; 
+  position: relative;
   
 }
 
@@ -251,9 +269,8 @@ position: absolute;
 } 
 
 .statuscom{
-  width: 178rpx;
+  width: 180rpx;
   height: 50rpx;
-  background-color: #fff;
   border-radius: 25rpx;
 }
 
@@ -261,5 +278,6 @@ position: absolute;
   overflow:hidden;
 text-overflow:ellipsis;
 white-space:nowrap; 
-
+ width: 480rpx;
+ 
 }

@@ -8,12 +8,14 @@
   <view class="hotpic">
      <view class="toptitle">
         <view class="avatar">
-           <image class="img_zb" mode="widthFix" style="width: {{imagewidth}}px; height: {{imageheight}}px;"   mode="center" src='http://m.imeitou.com/uploads/allimg/2019032114/ccnwi0frzll.jpg' ></image>
+           <image class="img_zb" mode="widthFix" src='http://m.imeitou.com/uploads/allimg/2019032114/ccnwi0frzll.jpg' ></image>
           <view style="margin-left:10px;">破碎酒瓶</view>
         </view>
         <view class="spinfor">2.8万  观看 | 昆明</view>
      </view>
-     <view class="hot_img"></view>
+     <view class="hot_img">
+        <image class="dianzan" src="/img/dzan.gif"></image>
+     </view>
      <view class="hot_detail">最帅主播来直播啦,翡翠珠宝免费送啦送啦送啦</view>
   </view>
 
@@ -35,9 +37,9 @@
   <scroll-view  scroll-x  > 
    <view class="livorder">
      <view wx:for="{{living}}" class="recommand_living" >
-      <view class="living_pic">
-         <view style="font-size:12px;">{{item.livname}}</view>
-         <view class="living_gif"></view>
+      <view class="living_pic" style="background-image:url('{{item.livpic}}')">
+         <view style="font-size:12px;color:#fff;">{{item.livname}}</view>
+         <image class="living_gif" src="/img/livgif.gif"></image >
          
       </view>
 
@@ -67,6 +69,7 @@
 
 <view class="listAll">
     <view wx:for="{{listLive}}" class="listlive" style="background-image:url('{{item.livbgpic}}')">
+        <image class="dianzan" src="/img/dzan.gif"></image>
         <view class="listAvatar">
           <image class="avatar_pic"></image>
           <view style="padding-left:20rpx; color:#fff;">{{item.listname}}</view>
@@ -74,7 +77,7 @@
         <view class="listStaus">
            
               <view class="list_up">
-                <image class="statuscom"></image>
+                <image class="statuscom" src="/img/livgif.gif"></image>
                 <view style="margin:0 40rpx 0 24rpx; font-size:10px;">
                     <text style="color:#fdb33f" decode="true" space="true">{{item.listperson}}观看&nbsp;&nbsp;</text>
                     <text style="color:#fff" decode="true" space="true">|&nbsp;&nbsp;{{item.listaddr}}</text>
