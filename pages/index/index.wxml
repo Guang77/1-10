@@ -2,7 +2,7 @@
 
 
 <view class="container">
-  <image class="main"></image>
+  <image class="main" src="/img/top_bg.png"></image>
   <view class="title">早上好</view>
   <view class="title2">9月20日  周末</view>
   <view class="hotpic">

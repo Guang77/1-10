@@ -6,7 +6,7 @@ page{
 
 .main{
 
-  background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1578675122841&di=57eb811b11a645a93003e180c5c48851&imgtype=0&src=http%3A%2F%2Fwallpapers1.hellowallpaper.com%2Fart_black-background-widescreen--03_24-1280x800.jpg"); 
+  /* background-image: url("/img/top_bg.png");  */
   
   width: 100vw;
  
@@ -118,7 +118,7 @@ position: absolute;
 }
 
 .qualification1{
-  margin: 0 8rpx;
+  margin: 0 10rpx;
   width: 100vh;
   height: 160rpx;
   background-color: #fff;
