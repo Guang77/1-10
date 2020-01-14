@@ -1,0 +1,68 @@
+
+.listTitle{
+  margin:32rpx 0 0 32rpx;
+  
+}
+
+.listlive{
+  margin:24rpx 32rpx 0 32rpx;
+  height: 386rpx;
+  border-radius: 24rpx;
+  background-color:blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start; 
+  background-repeat:no-repeat;background-size:100% 100%;-moz-background-size:100% 100%; 
+  position: relative;
+  
+}
+
+.listAvatar{
+  margin:30rpx 0 0 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar_pic{
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 50vw;
+  background-color: red;
+}
+
+.listStaus{
+  padding: 0 0 32rpx 32rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start; 
+}
+
+ .list_up{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  height: 50rpx;
+  background: rgba(0, 0, 0, 0.8);
+  margin-bottom: 8rpx;
+  border-radius: 25rpx;
+  
+} 
+
+.statuscom{
+  width: 180rpx;
+  height: 50rpx;
+  border-radius: 25rpx;
+}
+
+.listdown_tile{
+  overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap; 
+ width: 480rpx;
+ 
+}

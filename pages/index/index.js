@@ -1,5 +1,7 @@
 //index.js
 //获取应用实例
+var listLivepp=require('../../data/data.js')
+
 const app = getApp()
 
 Page({
@@ -12,54 +14,28 @@ Page({
       { id: 2, livpic: " /img/recommand_pic2.png", livname: "主播二", livtitle: "于是宝石", livperson: "3.0万", livadd: "昆明"},
       { id: 3, livpic: " /img/recommand_pic1.png", livname: "主播三", livtitle: "快点来看直播啊", livperson: "4.2万", livadd: "昆明"}, 
     
-    ],
-
-    slider:[
-      {id:1,slidershow:"/img/slider1.jpg",sliderlink:""},
-      {id:2,slidershow: "/img/slider2.jpg", sliderlink: "" },
-      {id:3,slidershow: "/img/slider3.jpg", sliderlink: "" },
-    ],
- 
-
-    listLive:[
-      { id: 1, listavatar: "", listname: "主播一", listperson: "2.5万", listaddr: "北京", listdet: "这是于是宝石的直播间", livbgpic:"/img/recommand_pic1.png"}, 
-      { id: 2, listavatar: "", listname: "主播二", listperson: "2.5万", listaddr: "昆明", listdet: "这是翡翠直播间这是翡翠直播间这是翡翠直播间", livbgpic:"/img/recommand_pic2.png"}
-    ],
+    ]
 
   },
   //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
+
   onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
+   
+   var sliderTem=[
+     { id: 1, slidershow: "/img/slider1.jpg", sliderlink: "" },
+     { id: 2, slidershow: "/img/slider2.jpg", sliderlink: "" },
+     { id: 3, slidershow: "/img/slider3.jpg", sliderlink: "" }
+   ]
+
+
+    this.setData({
+      slider : sliderTem
+    })  
+    
+    this.setData({
+      listLive: listLivepp.listLiving
+    })  
+
   },
   getUserInfo: function(e) {
     console.log(e)
@@ -70,7 +46,6 @@ Page({
     })
   },
 
-  
 
   
 

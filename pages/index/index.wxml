@@ -1,107 +1,96 @@
 <!--index.wxml-->
+<import src="template/index-template.wxml" />
 
+<view class="serviceOut">
+  <view class="serviceframe">
+    <image src="../../img/Avatarsample168.png"></image>
+    <view class="serviceTxt">专属顾问</view>
+  </view>
+</view>
 
 <view class="container">
   <image class="main" src="/img/top_bg.png"></image>
   <view class="title">早上好</view>
-  <view class="title2">9月20日  周末</view>
+  <view class="title2">9月20日 周末</view>
   <view class="hotpic">
-     <view class="toptitle">
-        <view class="avatar">
-           <image class="img_zb" mode="widthFix" src='http://m.imeitou.com/uploads/allimg/2019032114/ccnwi0frzll.jpg' ></image>
-          <view style="margin-left:10px;">破碎酒瓶</view>
-        </view>
-        <view class="spinfor">2.8万  观看 | 昆明</view>
-     </view>
-     <view class="hot_img">
-        <image class="dianzan" src="/img/dzan.gif"></image>
-     </view>
-     <view class="hot_detail">最帅主播来直播啦,翡翠珠宝免费送啦送啦送啦</view>
+    <view class="toptitle">
+      <view class="avatar">
+        <image class="img_zb" mode="widthFix" src='http://m.imeitou.com/uploads/allimg/2019032114/ccnwi0frzll.jpg'></image>
+        <view style="margin-left:10px;">破碎酒瓶</view>
+      </view>
+      <view class="spinfor">2.8万 观看 | 昆明</view>
+    </view>
+    <view class="hot_img">
+      <image class="dianzan" src="/img/dzan.gif"></image>
+    </view>
+    <view class="hot_detail">最帅主播来直播啦,翡翠珠宝免费送啦送啦送啦</view>
   </view>
 
   <view class="qualification">
-  
-     <view wx:for="{{array}}" class="qualification1">
-        <view class="qualif-icon"><image class="q_icon" src="{{item.picM}}"></image></view>
-        <view class="qualif-text">{{item.tcid}}</view>
-     </view>
-     
+
+    <view wx:for="{{array}}" class="qualification1">
+      <view class="qualif-icon">
+        <image class="q_icon" src="{{item.picM}}"></image>
+      </view>
+      <view class="qualif-text">{{item.tcid}}</view>
+    </view>
+
   </view>
- 
- 
+
+
   <view class="recommend">
     <view class="recommend_title">
-        <text style="font-size:14px;font-weight:bold;">推荐</text>
-        <text style="font-size:12px; color:#aaa;" decode="true" space="true"> &nbsp;&nbsp;5场直播</text>
-    </view>
-  <scroll-view  scroll-x  > 
-   <view class="livorder">
-     <view wx:for="{{living}}" class="recommand_living" >
-      <view class="living_pic" style="background-image:url('{{item.livpic}}')">
-         <view style="font-size:12px;color:#fff;">{{item.livname}}</view>
-         <image class="living_gif" src="/img/livgif.gif"></image >
-         
-      </view>
-
-      <view class="living_info">
-        <view style="font-size:14px;">{{item.livtitle}}</view>
-        <view style="color:#aaa; font-size:12px; margin-top:8rpx;">{{item.livperson}} | {{item.livadd}}</view>
-      
-      </view>
-
-     </view>
-    </view> 
-   </scroll-view>
-  </view> 
-
- <swiper class="sliderss" autoplay="{{true}}" interval="3000" duration="1000" circular="false">
-    <view wx:for="{{slider}}">
-       <swiper-item>
-          <view><image src="{{item.slidershow}}" ></image></view>
-       </swiper-item>
-    </view>
-   </swiper>
-
-<view class="listTitle">
-     <text style="font-size:14px;font-weight:bold;">直播列表</text>
+      <text style="font-size:14px;font-weight:bold;">推荐</text>
       <text style="font-size:12px; color:#aaa;" decode="true" space="true"> &nbsp;&nbsp;5场直播</text>
-</view>
-
-<view class="listAll">
-    <view wx:for="{{listLive}}" class="listlive" style="background-image:url('{{item.livbgpic}}')">
-        <image class="dianzan" src="/img/dzan.gif"></image>
-        <view class="listAvatar">
-          <image class="avatar_pic"></image>
-          <view style="padding-left:20rpx; color:#fff;">{{item.listname}}</view>
-        </view>
-        <view class="listStaus">
-           
-              <view class="list_up">
-                <image class="statuscom" src="/img/livgif.gif"></image>
-                <view style="margin:0 40rpx 0 24rpx; font-size:10px;">
-                    <text style="color:#fdb33f" decode="true" space="true">{{item.listperson}}观看&nbsp;&nbsp;</text>
-                    <text style="color:#fff" decode="true" space="true">|&nbsp;&nbsp;{{item.listaddr}}</text>
-                </view>   
-              </view>
-              
-              <view class="listdown_tile" style="font-size:14px; color:#fff; font-weight:bold;">
-                 {{item.listdet}}
-              </view>
-             
-        </view>
     </view>
+    <scroll-view scroll-x>
+      <view class="livorder">
+        <view wx:for="{{living}}" class="recommand_living">
+          <view class="living_pic" style="background-image:url('{{item.livpic}}')">
+            <view style="font-size:12px;color:#fff;">{{item.livname}}</view>
+            <image class="living_gif" src="/img/livgif.gif"></image>
+
+          </view>
+
+          <view class="living_info">
+            <view style="font-size:14px;">{{item.livtitle}}</view>
+            <view style="color:#aaa; font-size:12px; margin-top:8rpx;">{{item.livperson}} | {{item.livadd}}</view>
+
+          </view>
+
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <swiper indicator-dots="ture" class="sliderss" autoplay="{{true}}" interval="3000" duration="1000" circular="false">
+    <view wx:for="{{slider}}">
+      <swiper-item>
+        <view>
+          <image src="{{item.slidershow}}"></image>
+        </view>
+      </swiper-item>
+    </view>
+  </swiper>
+
+  <view class="listTitle">
+    <text style="font-size:14px;font-weight:bold;">直播列表</text>
+    <text style="font-size:12px; color:#aaa;" decode="true" space="true"> &nbsp;&nbsp;5场直播</text>
+  </view>
+
+  <view class="listAll">
+    <view wx:for="{{listLive}}" class="listlive" style="background-image:url('{{item.livbgpic}}')">
+      <template is="listMain" data="{{item}}" />
+    </view>
+  </view>
+
+
+
+
+
+
+
+
+
+
 </view>
-
-
-
-
-
- 
-
-
-
-
-</view>
-
-
-

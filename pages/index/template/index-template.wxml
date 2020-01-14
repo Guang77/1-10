@@ -1,0 +1,22 @@
+<template name="listMain">
+    <image class="dianzan" src="/img/dzan.gif"></image>
+      <view class="listAvatar">
+        <image class="avatar_pic"></image>
+        <view style="padding-left:20rpx; color:#fff;">{{item.listname}}</view>
+      </view>
+      <view class="listStaus">
+
+        <view class="list_up">
+          <image class="statuscom" src="/img/livgif.gif"></image>
+          <view style="margin:0 40rpx 0 24rpx; font-size:10px;">
+            <text style="color:#fdb33f" decode="true" space="true">{{item.listperson}}观看&nbsp;&nbsp;</text>
+            <text style="color:#fff" decode="true" space="true">|&nbsp;&nbsp;{{item.listaddr}}</text>
+          </view>
+        </view>
+
+        <view class="listdown_tile" style="font-size:14px; color:#fff; font-weight:bold;">
+          {{item.listdet}}
+        </view>
+
+      </view>
+</template> 
