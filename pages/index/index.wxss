@@ -21,7 +21,7 @@
   width: 88rpx;
   height: 88rpx;
   border-radius: 50%;
-  border: 6rpx solid #fff;
+  border: 5rpx solid #fff;
   
   
 }
